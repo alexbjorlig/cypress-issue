@@ -1,0 +1,25 @@
+{
+  "name": "cypress-issue",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "cypress": "^3.2.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "cypress:open": "cypress open"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dauledk/cypress-issue.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dauledk/cypress-issue/issues"
+  },
+  "homepage": "https://github.com/dauledk/cypress-issue#readme"
+}
