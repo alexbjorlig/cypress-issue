@@ -5,8 +5,10 @@
   "main": "index.js",
   "dependencies": {},
   "devDependencies": {
+    "@bahmutov/add-typescript-to-cypress": "^2.0.0",
     "@cypress/webpack-preprocessor": "^4.0.3",
-    "cypress": "^3.2.0"
+    "cypress": "^3.2.0",
+    "typescript": "^3.4.1"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
