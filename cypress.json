@@ -1,7 +1,7 @@
 {
     "baseUrl": "http://localhost:4200/",
     "watchForFileChanges": true,
-    "testFiles": "**/*.spec.js",
+    "testFiles": "**/*.spec.ts",
     "viewportWidth": 1920,
     "viewportHeight": 1080
   }

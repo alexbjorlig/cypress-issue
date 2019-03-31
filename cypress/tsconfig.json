@@ -1,0 +1,19 @@
+{
+    "compilerOptions": {
+        "strict": true,
+        "module": "commonjs",
+        "noImplicitAny": false,
+        "sourceMap": true, // True for debugging
+        // "target": "es2015",
+        "target": "es6",
+        "allowJs": true,
+        "types": ["cypress"]
+    },
+    "exclude": [
+        "node_modules",
+        // "**/*.spec.ts"
+    ],
+    "include": [
+        "**/*.ts"
+    ]
+}
