@@ -7,12 +7,12 @@ export function drag(dragSelector: string, dropSelector: string) {
       const droppable = Cypress.$(dropSelector)[0]; // Drop over this
 
       const coords = droppable.getBoundingClientRect();
-      draggable.dispatchEvent(new MouseEvent('mousedown'));
-      draggable.dispatchEvent(new MouseEvent('mousemove', {clientX: 10, clientY: 0}));
-      draggable.dispatchEvent(new MouseEvent('mousemove', {
+      draggable.dispatchEvent(<any>new MouseEvent('mousedown'));
+      draggable.dispatchEvent(<any>new MouseEvent('mousemove', {clientX: 10, clientY: 0}));
+      draggable.dispatchEvent(<any>new MouseEvent('mousemove', {
           // I had to add (as any here --> maybe this can help solve the issue??)
-          clientX: (coords as any).x + 10,
-          clientY: (coords as any).y + 10  // A few extra pixels to get the ordering right
+          clientX: coords.left + 10,
+          clientY: coords.top + 10  // A few extra pixels to get the ordering right
       }));
       draggable.dispatchEvent(new MouseEvent('mouseup'));
       return cy.get(dropSelector);
