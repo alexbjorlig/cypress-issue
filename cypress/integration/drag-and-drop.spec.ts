@@ -1,4 +1,4 @@
-it('🔥 Thx to Stackoverflow, drag and drop support now works 🔥', () => {
+it('This spec works in Chrome, but not Electron 😢', () => {
     cy.visit('')
     .wait(4000)
     .url().should('contain', 'angular')
